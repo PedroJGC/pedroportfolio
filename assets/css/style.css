@@ -15,7 +15,9 @@ body {
      width: 100%;
      justify-content: flex-end;
  }
- 
+
+ /*Alinhando e escondendo a class "welcome-section"*/
+
  .welcome-section {
      position: absolute;
      width: 100%;
@@ -32,6 +34,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .fly-in-text {
     font-family: 'Quicksand', sans-serif;
@@ -56,7 +59,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 2em;
-    text-decoration: none;
+    text-decoration: #000;
     color: #adff2f;
     opacity: 1;
     margin-top: 30px;
