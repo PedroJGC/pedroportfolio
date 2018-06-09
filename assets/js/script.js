@@ -14,3 +14,12 @@ $(function() {
             welcomeSection.addClass('content-hidden').fadeOut();
         });
 });
+
+//Menu responsivo
+
+$("#toggle").click(function () {
+    
+    $(this).toggleClass('on');
+    $("#resize").toggleClass("active");
+
+});
