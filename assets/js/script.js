@@ -3,7 +3,7 @@
 //Adicionar evento ao Button, fazendo com que entre na página principal.
 $(function() {
    var welcomeSection = $('.welcome-section'),
-        enterButton = welcomeSection.find('.enter-button');
+       enterButton = welcomeSection.find('.enter-button');
 
         setTimeout(function() {
             welcomeSection.removeClass('content-hidden');
@@ -12,6 +12,7 @@ $(function() {
         enterButton.on('click', function(e) {
             e.preventDefault();
             welcomeSection.addClass('content-hidden').fadeOut();
+            window.location.href = "corpo.html";
         });
 });
 
@@ -23,3 +24,25 @@ $("#toggle").click(function () {
     $("#resize").toggleClass("active");
 
 });
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
