@@ -92,7 +92,7 @@ nav #menu li a {
     z-index: 1;
     top: 0;
     position: absolute;
-    background: #7962AB;
+    background: #4C5661;
     width: 100%;
     height: 100%;
     padding-right: 50px;
@@ -190,13 +190,17 @@ nav #menu li a {
 .content-hidden .fly-in-text li:nth-child(5) { transform: translate3d(60px, 0, 0); }
 .content-hidden .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
 
+.img-center {
+    height: 350px;
+}
+
 .citacao {
     align-self: start;
     margin-top: 20px;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 0 rgba(44,44,44,0.15);
-    background-color: #7962AB;
+    background-color: #4C5661;
 }
 
 .citacao p {
@@ -212,23 +216,36 @@ nav #menu li a {
     box-shadow: 5px 5px 5px 0 rgba(44,44,44,0.15);
 }
 
+#img-2 {
+    height: 100%;
+}
+#img-3 {
+    height: 100%;
+}
+
 .box-text-1 {
     width: 95%;
     height: 100%;
     top: 0;
     left: 2.4%;
     border-radius: 5px;
-    background-color: #7962AB;
+    background-color: #4C5661;
     opacity: 0;
     transition: all .5s ease;
     box-shadow: 5px 5px 5px 0 rgba(44,44,44,0.15);
 } 
 
 .img-1:hover .box-text-1 {
-    opacity: 1;
+    opacity: 0.99;
 }
 .img-2:hover .box-text-1 {
-    opacity: 1;
+    opacity: 0.99;
+} 
+.img-3:hover .box-text-1 {
+    opacity: 0.99;
+} 
+.img-4:hover .box-text-1 {
+    opacity: 0.99;
 } 
 
 .text-1 {
@@ -282,6 +299,7 @@ nav #menu li a {
    .img-2 {
        margin-top: 15px;
    }
+   
     
 }
 
@@ -305,7 +323,7 @@ nav #menu li a {
 
     .d-flex img {
         margin: auto;
-        height: 200px;
+        /*height: 200px;*/
     }
    .fly-in-text {
         display: -webkit-flex;
@@ -327,6 +345,12 @@ nav #menu li a {
    }
    .img-2 {
        margin-top: 15px;
+   }
+   .img-4 {
+       margin-top: 15px;
+   }
+   .img-center {
+       height: 128px;
    }
 }
 
