@@ -25,7 +25,43 @@ $("#toggle").click(function () {
 
 });
 
- 
+//Trocando imagens dos icones de contatos
+
+$('#email img').mouseover(function () {
+    $(this).attr('src', 'assets/images/icon-email2.png');
+    $('#email img').mouseout(function () {
+        $(this).attr('src', 'assets/images/icon-email1.png');
+
+    });
+});
+
+
+$('#facebook img').mouseover(function () {
+    $(this).attr('src', 'assets/images/icon-face2.png');
+    $('#facebook img').mouseout(function () {
+        $(this).attr('src', 'assets/images/icon-face1.png');
+
+    });
+});
+
+$('#instagram img').mouseover(function () {
+    $(this).attr('src', 'assets/images/icon-insta2.png');
+    $('#instagram img').mouseout(function () {
+        $(this).attr('src', 'assets/images/icon-insta1.png');
+
+    });
+});
+
+$('#git img').mouseover(function () {
+    $(this).attr('src', 'assets/images/icon-git2.png');
+    $('#git img').mouseout(function () {
+        $(this).attr('src', 'assets/images/icon-git1.png');
+
+    });
+});
+
+
+
 
 
 

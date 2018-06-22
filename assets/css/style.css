@@ -30,7 +30,12 @@ nav #brand a {
     font-weight: 300;
     text-decoration: none;
 }
+
  
+#brand hr {
+    margin-top: 0;
+}
+
 nav #menu {
     float: left;
     left: 50%;
@@ -92,7 +97,7 @@ nav #menu li a {
     z-index: 1;
     top: 0;
     position: absolute;
-    background: #4C5661;
+    background: #25262A;
     width: 100%;
     height: 100%;
     padding-right: 50px;
@@ -139,7 +144,7 @@ nav #menu li a {
      height: 100%;
      top: 0;
      left: 0;
-     background-color: #444444;
+     background-color: #25262A;
      overflow: hidden;
      z-index: 999;
  }
@@ -175,7 +180,7 @@ nav #menu li a {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 2em;
-    text-decoration: #444444;
+    text-decoration: #25262A;
     color: #adff2f;
     opacity: 1;
     margin-top: 30px;
@@ -198,16 +203,14 @@ nav #menu li a {
     align-self: start;
     margin-top: 20px;
     padding: 30px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px 0 rgba(44,44,44,0.15);
-    background-color: #4C5661;
+    background-color: #25262A;
 }
 
 .citacao p {
     font-size: 1.5em;
     text-align: center;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     color: #FFF;
 }
 
@@ -229,7 +232,7 @@ nav #menu li a {
     top: 0;
     left: 2.4%;
     border-radius: 5px;
-    background-color: #4C5661;
+    background-color: #25262A;
     opacity: 0;
     transition: all .5s ease;
     box-shadow: 5px 5px 5px 0 rgba(44,44,44,0.15);
@@ -258,13 +261,112 @@ nav #menu li a {
 }
 
 .box-text-1 a {
-    color: #FDC14A;
+    color: #FCE473;
     font-size: 1.5em;
     top: 65%;
     left: 43%;
     text-decoration: none;
     text-align: center;
 }
+
+ 
+.citacao2 {
+    align-self: start;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 30px;
+    background-color: #FCE473;
+}
+
+.citacao2 p {
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #444444;
+}
+
+.text-line {
+    width: 50px;
+    height: 1px;
+    background-color: #FCE473;
+}
+
+.sobre p {
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+.sobre img {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+}
+
+.img-lampada {
+    margin: 20px;
+}
+
+.sobre ul {
+    margin: 50px;
+}
+.sobre ul li {
+    color: #FFF;
+    font-size: 1.4em;
+    transition: all 0.6s ease;
+}
+.sobre ul li:hover {
+    color: #FCE473;
+} 
+
+.sobre ul li img {
+    margin-left: 5%;
+}
+ 
+.citacao3 {
+    align-self: start;
+    margin-bottom: 0;
+    padding: 30px;
+    background-color: #FFF;
+}
+
+.citacao3 p {
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #444;
+}
+
+.contato a {
+    text-decoration: none;
+    margin: 20px 7px 20px 7px;
+}
+
+.footer p {
+    font-size: 1.1em;
+    margin: 50px 0 5px 0;
+}
+
+.footer img {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 768px) {
 
@@ -299,8 +401,14 @@ nav #menu li a {
    .img-2 {
        margin-top: 15px;
    }
-   
-    
+   .img-lampada {
+       display: none;
+   }
+   .sobre ul {
+       position: relative;
+       right: 50px;
+   }
+
 }
 
 @media(min-width: 769px) {
@@ -351,6 +459,22 @@ nav #menu li a {
    }
    .img-center {
        height: 128px;
+   }
+   .sobre img {
+       width: 170px;
+       height: 170px;
+       margin-right: 0;
+   }
+   .img-lampada {
+       display: none;
+   }
+   .sobre ul {
+       margin: 20px 0 15px 0;
+       position: relative;
+       right: 20px;
+   }
+   .sobre ul li {
+       font-size: 1.3em;
    }
 }
 
