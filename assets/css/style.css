@@ -352,22 +352,14 @@ nav #menu li a {
     margin-bottom: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#toTop {
+    padding: 5px 3px;
+    background: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
 @media(max-width: 768px) {
 
     #toggle {
@@ -388,8 +380,9 @@ nav #menu li a {
     nav #menu {
         display: none;
     }
-      .text-1 {
+    .text-1 {
        top: 0;
+       font-size: 1.2em;
    }
    .box-text-1 a {
        top: 80%;
@@ -446,6 +439,7 @@ nav #menu li a {
    }
    .text-1 {
        top: 0;
+       font-size: 1.5em;
    }
    .box-text-1 a {
        top: 80%;
@@ -475,6 +469,9 @@ nav #menu li a {
    }
    .sobre ul li {
        font-size: 1.3em;
+   }
+.footer {
+       margin-bottom: 40px;
    }
 }
 

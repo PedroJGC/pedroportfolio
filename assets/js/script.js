@@ -17,14 +17,28 @@ $(function() {
 });
 
 //Menu responsivo
-
+$(function () {
 $("#toggle").click(function () {
     
     $(this).toggleClass('on');
-    $("#resize").toggleClass("active");
-
+    $("#resize").toggleClass('active');
+   
+});
+    $('#menu a').click(function () {
+        $('#toggle').removeClass('on');
+        $('#resize').removeClass('active');
+    });
 });
 
+
+
+
+
+
+
+
+
+   
 //Trocando imagens dos icones de contatos
 
 $('#email img').mouseover(function () {
@@ -60,14 +74,38 @@ $('#git img').mouseover(function () {
     });
 });
 
+//Scroll suave 
+
+$('nav a').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    targetOffset = $(id).offset().top;
+
+    $('html, body').animate({
+        scrollTop: targetOffset
+    }, 500);
+
+});
 
 
 
 
+$(window).scroll(function () {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
 
-
-
-
+$("#toTop").click(function (e) {
+    e.preventDefault();
+    //1 second of animation time
+    //html works for FFX but not Chrome
+    //body works for Chrome but not FFX
+    //This strange selector seems to work universally
+    $("html, body").animate({ scrollTop: 0 }, 500);
+});
 
 
 
