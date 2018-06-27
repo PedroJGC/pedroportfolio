@@ -1,7 +1,7 @@
 //Criar duas variáveis para pegar os elementos "welcome-section" e "enter-button" pela class.
 //Criar uma função para remover a class content-hidden.
 //Adicionar evento ao Button, fazendo com que entre na página principal.
-$(function() {
+/*$(function() {
    var welcomeSection = $('.welcome-section'),
        enterButton = welcomeSection.find('.enter-button');
 
@@ -14,7 +14,20 @@ $(function() {
             welcomeSection.addClass('content-hidden').fadeOut();
             window.location.href = "corpo.html";
         });
-});
+});*/
+ $(function () {
+    
+    setTimeout(function () {
+         $('.welcome-section').removeClass('content-hidden');
+     }, 800);
+  
+         setTimeout(function () {   
+         $('.welcome-section').addClass('content-hidden').fadeOut(function () {
+             $(location).attr('href', 'corpo.html');     
+         });
+     }, 6000); 
+ 
+ });
 
 //Menu responsivo
 $(function () {
@@ -29,15 +42,6 @@ $("#toggle").click(function () {
         $('#resize').removeClass('active');
     });
 });
-
-
-
-
-
-
-
-
-
    
 //Trocando imagens dos icones de contatos
 

@@ -181,7 +181,7 @@ nav #menu li a {
     text-align: center;
     font-size: 2em;
     text-decoration: #25262A;
-    color: #adff2f;
+    color: #FCE473;
     opacity: 1;
     margin-top: 30px;
     transition: all 1s ease 3s;
@@ -401,6 +401,9 @@ nav #menu li a {
        position: relative;
        right: 50px;
    }
+    #toTop {
+       z-index: 999;
+   }
 
 }
 
@@ -470,8 +473,11 @@ nav #menu li a {
    .sobre ul li {
        font-size: 1.3em;
    }
-.footer {
+   .footer {
        margin-bottom: 40px;
+   }
+   #toTop {
+       z-index: 999;
    }
 }
 
